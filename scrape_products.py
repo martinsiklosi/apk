@@ -84,7 +84,7 @@ def main():
             "AlcoholPerKrona": compute_apk(vol_apv.text, price.text)
         }
         
-        product_id = f"{product['ArticleNumber']} {product['Volume']} {product['Price']}"
+        product_id = f"{product['ArticleNumber']} {product['Volume']} {product['AlcoholPerVolume']} {product['Price']}"
         if product_id not in added:
             products.append(product)
             added.append(product_id)  
